@@ -4,6 +4,8 @@ import urllib.request
 
 
 def download_images(df):
+    
+    '''Downloads images from dataframe containing bird names and image urls'''
 
     directories = df.Name.unique()
     
