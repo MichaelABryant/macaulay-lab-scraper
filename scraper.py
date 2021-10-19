@@ -5,10 +5,10 @@ import pandas as pd
 import numpy as np
 from selenium.common.exceptions import NoSuchElementException 
 
-#function for requesting number of albums
+#function for requesting number of bird image urls
 def get_birds(num_birds, verbose):
     
-    '''Gathers albums as a dataframe, scraped from rateyourmusic.com'''   
+    '''Gathers bird image urls as a dataframe, scraped from macaulay library'''   
     
     #initialize chrome driver
     driver = webdriver.Chrome(executable_path="C:/Users/malex/Desktop/cornell lab birds/chromedriver.exe")
@@ -103,5 +103,5 @@ def get_birds(num_birds, verbose):
             break
          
         
-    #return requested albums as a dataframe
+    #return requested bird names with urls as a dataframe
     return pd.DataFrame(birds)
